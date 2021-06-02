@@ -1,0 +1,8 @@
+#GET WETH TO FUND CONTRACT
+brownie run scripts/get_weth.py --network kovan
+
+#DEPOY FLASHLOAN CONTRACT
+brownie run scripts/deployment_v2.py --network kovan
+
+#EXECUTE FLASHLOAN
+brownie run scripts/run_flash_loan_v2.py --network kovan
